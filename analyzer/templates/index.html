@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPPC HV Controller</title>
+  <!-- style -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <!-- jQuery -->
+  <script src="{{ url_for('static', filename='external_js/jquery-3.7.1.min.js') }}"></script>
+  <!-- Plotly.js -->
+  <script src="{{ url_for('static', filename='external_js/plotly-2.32.0.min.js') }}" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="grid-container">
+    
+    <button id="updateButton">Update Graph</button>
+
+    <!-- right region -->
+    <div class="right-container">
+      <div id="trendGraph"></div>
+    </div> <!-- right region -->
+
+  </div> <!-- grid-container -->
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/plot.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/accordion.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/button.js') }}"></script>
+</body>
+</html>

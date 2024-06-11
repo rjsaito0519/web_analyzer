@@ -1,0 +1,235 @@
+/* General Grid Container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+/* Left Column in Module Manager */
+.module-manager-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Title */
+.app-title {
+    margin: 2px 1%;
+}
+
+/* Fieldset Legend */
+legend {
+    padding: 1%;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* Input Fields */
+input {
+    width: 65%;
+    height: 30px;
+    margin: 2.5px 0;
+    font-size: 100%;
+}
+
+/* Apply Button */
+.apply-button {
+    width: 25%;
+    height: 35px;
+    margin: 2.5px 0;
+    border: 1px solid #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    background: #0a0a0a;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+}
+
+.apply-button:hover {
+    background: #ffffff;
+    color: #0a0a0a;
+}
+
+.apply-button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* Custom Button */
+.custom-button {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #27acd9;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    background: #ffffff;
+    color: #27acd9;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+}
+
+.custom-button:hover {
+    background: #27acd9;
+    color: #ffffff;
+}
+
+.custom-button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/* Table Wrapper */
+.table-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+table tbody tr {
+    transition: all 0.1s ease;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+table tbody tr:hover {
+    background: #2F3232;
+    color: #ffffff;
+}
+
+/* Status and Temp Corr Tables */
+.status-table tr,
+.temp-corr-param-table tr {
+    border-top: 1px solid #2F3232;
+    border-bottom: 1px solid #2F3232;
+}
+
+/* Sticky Table */
+.sticky-table {
+    overflow-y: scroll;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    height: 240pt;
+}
+
+#log-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #f5f5f8;
+}
+
+/* Success and Failure Text */
+.success {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.failure {
+    color: #f44336;
+    font-weight: bold;
+}
+
+/* Switches */
+.switch {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 2.5px 0;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.on {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.off {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Accordion Summary */
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Accordion Inner Summary */
+.summary-inner {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border: 1px solid #d2beff;
+    font-weight: bold;
+    color: #002255;
+    margin: 2.5px 0;
+}
+
+/* Accordion Icon */
+.accordion-icon {
+    display: block;
+    position: relative;
+    width: 24px;
+    margin-left: 6px;
+    flex-shrink: 0;
+    transform-origin: center 43%;
+    transition: transform 0.4s;
+}
+
+.details-summary.is-active .accordion-icon {
+    transform: rotate(180deg);
+}
+
+.accordion-icon::before,
+.accordion-icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 3px;
+    background-color: #7050ff;
+}
+
+.accordion-icon::before {
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.accordion-icon::after {
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+/* Accordion Content */
+.details-content {
+    overflow: hidden;
+    background-color: #f0f2ff;
+}
+
+.content-inner {
+    padding: 10px;
+    display: block;
+    gap: 16px;
+}
